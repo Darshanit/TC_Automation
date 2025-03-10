@@ -1,0 +1,96 @@
+h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeSlideUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: flex-start; /* Changed to flex-start to avoid overflow */
+    min-height: 100vh; /* Changed to min-height */
+    padding: 20px; /* Added padding to ensure form doesn't touch edges */
+    box-sizing: border-box;
+    background-color: #f5ebe0;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: #f3e9dc;
+    background-color: #8b7169;
+    border-radius: 25px;
+}
+#btn1{
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 0px; 
+    width: 250px;
+    height: 50px;
+    background-color: #7c4f42;
+    border: 3px solid #3e2522;
+    color: var(--clr-accent);
+    transition: all 0.3s;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+#btn1:hover{
+    transform: translateY(-10px);
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+}
+#btn2{
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 0px; 
+    width: 250px;
+    height: 50px;
+    background-color: #7c4f42;
+    border: 3px solid #3e2522;
+    color: var(--clr-accent);
+    transition: all 0.3s;
+    font-size: 16px;
+    
+}
+#btn2:hover{
+    transform: translateY(-10px);
+    background-color: var(--clr-accent);
+    color: var(--clr-light);
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #3e2522;
+    font-weight: bold;
+}
+.btn {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 10px; /* Reduce space between buttons */
+    align-items: center;
+    padding-top: 20px;
+}
+
+.btn1 {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn a {
+    margin-right: -5px; /* Slight overlap */
+}

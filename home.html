@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/pics/fileicon.svg">
+    <title>TcFileSystem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form action="{% url 'done_page' %}" method="post">
+            <h1>TC Register Form</h1>
+            {% csrf_token %}
+            
+                <label for="tc_no">TC no:</label>
+                <input type="number" id="tc_no" name="tc_no" required><br><br>
+                
+                <label for="roll_no">Roll no:</label>
+                <input type="number" id="roll_no" name="roll_no"><br><br>
+                
+                <label for="reg_no">Register no:</label>
+                <input type="number" id="reg_no" name="reg_no"><br><br><br>
+        
+                <label for="student_name">1. Name of the Student:</label>
+                <input type="text" id="student_name" name="student_name"><br>
+
+                <label for="father_name">2. Name of the Father / Guardian:</label>
+                <input type="text" id="father_name" name="father_name"><br>
+
+                <label for="nat_reli">3. Nationality & Religion:</label>
+                <input type="text" id="nat_reli" name="nat_reli"><br>
+
+                <label for="comm_caste">4. Community & Caste:</label>
+                <input type="text" id="comm_caste" name="comm_caste"><br>
+
+                 <label for="gender">5. Gender:</label>
+                <select name="gender" id="gender1">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select><br>
+                
+                <label for="dob_num">6. Date of Birth [DD/MM/YYYY]:</label>
+                <input type="date" id="dob_num" name="dob_num"><br>
+
+                <label for="dob_word">6. Date of Birth (in words):</label>
+                <input type="text" id="dob_word" name="dob_word"><br>
+
+                <label for="batch">7. Program and Branch in which student was admitted:</label>
+                <input type="text" id="batch" name="batch"><br>
+
+                <label for="date_of_adm">8. Date of Admission:</label>
+                <input type="date" id="date_of_adm" name="date_of_adm"><br>
+
+                <label for="medium_of_inst">9. Medium of Instruction:</label>
+                <input type="text" id="medium_of_inst" name="medium_of_inst"><br>
+
+                <label for="duration_of_study">10. Duration of Study:</label>
+                <input type="text" id="duration_of_study" name="duration_of_study"><br>
+
+                <label for="status_of_candidate">11. Status of the candidate while leaving the college (year / semester):</label>
+                <input type="text" id="status_of_candidate" name="status_of_candidate"><br>
+
+                <label for="qualified_for_promotion">12. Whether qualified for promotion to Higher Class:</label>
+                <input type="text" id="qualified_for_promotion" name="qualified_for_promotion"><br>
+
+                <label for="last_date_of_attendance">13. Last date of Attendance in the Institution:</label>
+                <input type="date" id="last_date_of_attendance" name="last_date_of_attendance"><br>
+
+                <label for="date_of_tc">14. Date in which student requested for TC:</label>
+                <input type="date" id="date_of_tc" name="date_of_tc"><br>
+
+                <label for="reason_for_tc">15. Reason for which TC was issued:</label>
+                <input type="text" id="reason_for_tc" name="reason_for_tc"><br>
+
+                <label for="character_and_conduct">16. Character and Conduct:</label>
+                <input type="text" id="character_and_conduct" name="character_and_conduct"><br><br><br>
+            
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date"><br>
+
+                <label for="umis">Emis no:</label>
+                <input type="number" id="umis" name="umis"><br><br><br>
+            
+
+            <center><button id="btn1" onclick="location.href='done.html'">Submit</button></center>
+            <hr><center>
+            <footer>
+                <p>
+                    For any Queries
+                    contact:
+                </p>
+                <a href="Danci'nRythm@gmail.com">Danci'nRythm@gmail.com</a>
+                <p>&copy; 2025 Danci'n Rythm. All Rights Reserved.</p>
+            </footer></center>
+        </form>
+    </main>
+</body>
+</html>
